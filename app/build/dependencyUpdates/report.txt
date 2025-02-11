@@ -1,0 +1,14 @@
+
+------------------------------------------------------------
+: Project Dependency Updates (report to plain text file)
+------------------------------------------------------------
+
+The following dependencies have later milestone versions:
+ - com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin [0.46.0 -> 0.52.0]
+ - org.junit:junit-bom [5.10.0 -> 5.12.0-RC1]
+     https://junit.org/junit5/
+ - org.junit.jupiter:junit-jupiter [5.10.0 -> 5.12.0-RC1]
+     https://junit.org/junit5/
+
+Gradle release-candidate updates:
+ - Gradle: [8.10 -> 8.12.1]
