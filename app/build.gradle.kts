@@ -1,7 +1,7 @@
 plugins {
     id("java")
+    id("application") // Подключаем плагин application
     id("com.github.ben-manes.versions") version "0.46.0" // Убедитесь, что используете последнюю версию
-
 }
 
 group = "hexlet.code"
@@ -18,4 +18,8 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    this.mainClass.set("hexlet.code.App") // Указываем точку входа в приложение
 }
