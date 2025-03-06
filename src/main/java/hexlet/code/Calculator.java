@@ -17,7 +17,8 @@ public class Calculator {
          int number1 = random.nextInt(99);
          int number2 = random.nextInt(99);
          int operation = random.nextInt(3);
-         String operator;
+
+            String operator;
          int correctAnswer;
 
 
