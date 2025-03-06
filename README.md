@@ -5,4 +5,5 @@
 
 
 # Пример запуска игры
-[![Пример запуска игры](https://asciinema.org/a/qdi1cmSUPTKmXqTxAxY8B69Mr)
+[![Пример запуска игры 1](https://asciinema.org/a/qdi1cmSUPTKmXqTxAxY8B69Mr)
+[![Пример запуска игры 2](https://asciinema.org/a/c3ijNSulJbgdocKHQKFq65bwy)
