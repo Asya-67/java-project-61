@@ -13,6 +13,7 @@ class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
 
@@ -31,6 +32,9 @@ class App {
                 break;
             case 4:
                 Games.GCD.start();
+                break;
+            case 5:
+                Games.Progression.start();
                 break;
             default:
                 System.out.println("Invalid choice, please try again.");
