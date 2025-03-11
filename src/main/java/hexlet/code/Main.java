@@ -1,4 +1,5 @@
 package hexlet.code;
+import hexlet.code.games.Games;
 
 import java.util.Scanner;
 
@@ -11,21 +12,25 @@ class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - GCD");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
 
         int choice = scanner.nextInt();
-
+        scanner.nextLine();
         // Запуск игры в зависимости от выбора
         switch (choice) {
             case 1:
                 Cli.greetUser();  // Приветствие пользователя
                 break;
             case 2:
-                EvenGame.start();
+                Games.EvenGame.start();
                 break;
             case 3:
-                Calculator.start();
+                Games.Calc.start();
+                break;
+            case 4:
+                Games.GCD.start();
                 break;
             default:
                 System.out.println("Invalid choice, please try again.");
