@@ -1,5 +1,9 @@
 package hexlet.code;
-import hexlet.code.games.Games;
+import hexlet.code.games.Prime;
+import hexlet.code.games.Calc;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 import java.util.Scanner;
 
@@ -26,19 +30,19 @@ class App {
                 Cli.greetUser();  // Приветствие пользователя
                 break;
             case 2:
-                Games.EvenGame.start();
+                EvenGame.start();
                 break;
             case 3:
-                Games.Calc.start();
+                Calc.start();
                 break;
             case 4:
-                Games.GCD.start();
+                GCD.start();
                 break;
             case 5:
-                Games.Progression.start();
+                Progression.start();
                 break;
             case 6:
-                Games.Prime.start();
+                Prime.start();
                 break;
             default:
                 System.out.println("Invalid choice, please try again.");
