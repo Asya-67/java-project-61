@@ -8,6 +8,15 @@ import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 class App {
+    private static final int GREET_GAME = 1;
+    private static final int EVEN_GAME = 2;
+    private static final int CALC_GAME = 3;
+    private static final int GCD_GAME = 4;
+    private static final int PROGRESSION_GAME = 5;
+    private static final int PRIME_GAME = 6;
+    private static final int EXIT = 0;
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,22 +35,22 @@ class App {
         scanner.nextLine();
         // Запуск игры в зависимости от выбора
         switch (choice) {
-            case 1:
+            case GREET_GAME:
                 Cli.greetUser();  // Приветствие пользователя
                 break;
-            case 2:
+            case EVEN_GAME:
                 EvenGame.start();
                 break;
-            case 3:
+            case CALC_GAME:
                 Calc.start();
                 break;
-            case 4:
+            case GCD_GAME:
                 GCD.start();
                 break;
-            case 5:
+            case PROGRESSION_GAME:
                 Progression.start();
                 break;
-            case 6:
+            case PRIME_GAME:
                 Prime.start();
                 break;
             default:
