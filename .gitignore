@@ -1,0 +1,17 @@
+# Java build files
+target/
+build/
+out/
+.gradle/
+.classpath
+.project
+*.iml
+
+# IntelliJ IDEA
+.idea/
+*.ipr
+*.iws
+
+# Logs and temporary files
+*.log
+*.tmp
