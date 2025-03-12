@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.GameLogic;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -13,7 +14,7 @@ public class Prime {
             System.out.print("May I have your name? ");
             String name = scanner.nextLine();
             System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-            Engine.start("Prime Game", name, new Engine.GameLogic() {
+            Engine.start("Prime Game", name, new GameLogic() {
                 private int currentQuestion;
 
                 @Override

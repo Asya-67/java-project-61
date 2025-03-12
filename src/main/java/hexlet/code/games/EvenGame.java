@@ -1,5 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
+import hexlet.code.GameLogic;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,7 +11,7 @@ public class EvenGame {
         System.out.print("May I have your name? ");
         String name = scanner.nextLine();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        Engine.start("Even Game", name, new Engine.GameLogic() {
+        Engine.start("Even Game", name, new GameLogic() {
             private final Random random = new Random();
 
             @Override

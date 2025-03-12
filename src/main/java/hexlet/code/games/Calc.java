@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.GameLogic;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class Calc {
         System.out.print("May I have your name? ");
         String name = scanner.nextLine();
 
-        Engine.start("Calculator Game", name, new Engine.GameLogic() {
+        Engine.start("Calculator Game", name, new GameLogic() {
             private final Random random = new Random();
             private int currentAnswer;
 

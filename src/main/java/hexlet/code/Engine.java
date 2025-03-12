@@ -34,11 +34,6 @@ public class Engine {
         }
         System.out.println("Congratulations, " + name + "!");
     }
-
-    public interface GameLogic {
-        String getQuestion();
-        String getCorrectAnswer();
-    }
 }
 
 
