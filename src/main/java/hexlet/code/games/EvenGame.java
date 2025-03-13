@@ -1,4 +1,5 @@
 package hexlet.code.games;
+
 import hexlet.code.Engine;
 import hexlet.code.GameLogic;
 
@@ -22,12 +23,9 @@ public class EvenGame {
 
             @Override
             public String getCorrectAnswer() {
-                // Определяем правильный ответ
                 int number = Integer.parseInt(getQuestion());
                 return (number % 2 == 0) ? "yes" : "no";
             }
         });
     }
 }
-
-

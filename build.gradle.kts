@@ -7,7 +7,7 @@ plugins {
 
 checkstyle {
     toolVersion = "10.12.4" // Укажите актуальную версию Checkstyle
-    configFile = file("app/config/checkstyle/checkstyle.xml") // Указываем путь к конфигурационному файлу
+    configFile = file("config/checkstyle/checkstyle.xml") // Указываем путь к конфигурационному файлу
     isIgnoreFailures = false  // Прерывать сборку при ошибках
     isShowViolations = true   // Показывать ошибки в консоли
 }

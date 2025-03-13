@@ -3,4 +3,5 @@ install:
 	./gradlew installDist
 
 run-dist: install
-	./build/install/app/bin/app
+	./build/install/java-project-61/bin/java-project-61
+

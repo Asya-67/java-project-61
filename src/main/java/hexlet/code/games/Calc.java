@@ -21,7 +21,7 @@ public class Calc {
                 int number1 = random.nextInt(99);
                 int number2 = random.nextInt(99);
                 int operation = random.nextInt(3);
-                String operator = "";
+                String operator;
 
                 switch (operation) {
                     case 0:
@@ -36,6 +36,8 @@ public class Calc {
                         operator = "*";
                         currentAnswer = number1 * number2;
                         break;
+                    default:
+                        throw new IllegalArgumentException("Unexpected operation: " + operation);
                 }
                 return number1 + " " + operator + " " + number2;
             }
@@ -47,5 +49,3 @@ public class Calc {
         });
     }
 }
-
-
