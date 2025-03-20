@@ -1,4 +1,4 @@
-rootProject.name = "java-project-61"
-include("app")
+rootProject.name = "app"
+
 
 
