@@ -1,0 +1,21 @@
+# Директории сборки и временные файлы
+target/
+build/
+out/
+bin/
+.gradle/
+.idea/
+*.class
+*.log
+*.tmp
+
+# Файлы IDE
+*.iml
+*.ipr
+*.iws
+.metadata/
+.classpath
+.project
+
+# Конфигурационные файлы
+.env
