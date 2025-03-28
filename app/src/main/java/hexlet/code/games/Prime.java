@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Prime {
     private static final Random RANDOM = new Random();
-
+    private static final int MAX_LIMIT = 100;
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("May I have your name? ");
@@ -19,7 +19,7 @@ public class Prime {
 
             @Override
             public String getQuestion() {
-                currentQuestion = RANDOM.nextInt(100) + 1;
+                currentQuestion = RANDOM.nextInt(MAX_LIMIT) + 1;
                 return String.valueOf(currentQuestion);
             }
 

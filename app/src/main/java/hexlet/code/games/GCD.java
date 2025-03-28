@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GCD {
+    private static final int MAX_LIMIT = 100;
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("May I have your name? ");
@@ -19,8 +20,8 @@ public class GCD {
 
             @Override
             public String getQuestion() {
-                num1 = random.nextInt(100) + 1;
-                num2 = random.nextInt(100) + 1;
+                num1 = random.nextInt(MAX_LIMIT) + 1;
+                num2 = random.nextInt(MAX_LIMIT) + 1;
                 return num1 + " " + num2;
             }
 

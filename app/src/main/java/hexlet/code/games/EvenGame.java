@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class EvenGame {
+    private static final int MAX_LIMIT = 100;
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("May I have your name? ");
@@ -19,7 +20,7 @@ public class EvenGame {
 
             @Override
             public String getQuestion() {
-                number = random.nextInt(100) + 1;
+                number = random.nextInt(MAX_LIMIT) + 1;
                 return String.valueOf(number);
             }
 
