@@ -14,7 +14,8 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
         Engine.start("GCD Game", name, new GameLogic() {
             private final Random random = new Random();
-            private int num1, num2;
+            private int num1;
+            private int num2;
 
             @Override
             public String getQuestion() {
@@ -25,6 +26,7 @@ public class GCD {
 
             @Override
             public String getCorrectAnswer() {
+
                 return String.valueOf(gcd(num1, num2));
             }
         });

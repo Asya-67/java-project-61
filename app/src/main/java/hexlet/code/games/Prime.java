@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Prime {
-    private static final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
     public static void start() {
         Scanner scanner = new Scanner(System.in);
@@ -19,12 +19,13 @@ public class Prime {
 
             @Override
             public String getQuestion() {
-                currentQuestion = random.nextInt(100) + 1;
+                currentQuestion = RANDOM.nextInt(100) + 1;
                 return String.valueOf(currentQuestion);
             }
 
             @Override
             public String getCorrectAnswer() {
+
                 return isPrime(currentQuestion) ? "yes" : "no";
             }
 

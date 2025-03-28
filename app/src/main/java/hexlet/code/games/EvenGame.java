@@ -12,18 +12,20 @@ public class EvenGame {
         System.out.print("May I have your name? ");
         String name = scanner.nextLine();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+
         Engine.start("Even Game", name, new GameLogic() {
             private final Random random = new Random();
+            private int number; // Переменная для хранения числа
 
             @Override
             public String getQuestion() {
-                int number = random.nextInt(100) + 1;
+                number = random.nextInt(100) + 1;
                 return String.valueOf(number);
             }
 
             @Override
             public String getCorrectAnswer() {
-                int number = Integer.parseInt(getQuestion());
+
                 return (number % 2 == 0) ? "yes" : "no";
             }
         });
