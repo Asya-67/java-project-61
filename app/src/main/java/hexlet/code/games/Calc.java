@@ -11,6 +11,7 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
         System.out.print("May I have your name? ");
         String name = scanner.nextLine();
+        System.out.println("What is the result of the expression?");
 
         Engine.start("Calculator Game", name, new GameLogic() {
             private final Random random = new Random();
